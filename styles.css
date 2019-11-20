@@ -1,0 +1,99 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+}
+.whole-block{
+    height:100%;
+}
+.header{
+    height: 8%;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    height: 88%;
+    flex: 1;
+}
+.each-block{
+    background:#ccc;
+    height: max-content;
+    margin: 4%;
+    border: 1px solid #000;
+}
+.each-heading{
+    justify-content: flex-end;
+    display: flex;
+    margin: 0 !important;
+    border-bottom: 1px solid #ccc;
+}
+.each-content{
+    padding:2%;
+    line-height:1.5;
+    font-size:14px;
+}
+.pink{
+    border-left:1px solid #000;
+    border-bottom:1px solid #000;
+    font-size:15px;
+    font-weight:bold;
+    padding-top:1%;
+    width:25%;
+    text-align:center;
+    padding-bottom:1%;
+    background-color:pink;
+}
+.red{
+    border-left:1px solid #000;
+    border-bottom:1px solid #000;
+    font-size:15px;
+    font-weight:bold;
+    color:#fff;
+    padding-top:1%;
+    width:20%;
+    text-align:center;
+    padding-bottom:1%;
+    background-color:red;
+}
+.purple{
+    border-left:1px solid #000;
+    border-bottom:1px solid #000;
+    font-size:15px;
+    font-weight:bold;
+    color:#fff;
+    padding-top:1%;
+    width:20%;
+    text-align:center;
+    padding-bottom:1%;
+    background-color:purple;
+}
+@media screen and (max-width: 767px) {
+	.content{
+	    display : block;
+	}
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+	.content{
+            position:relative;
+	    flex-wrap: wrap;
+	}
+	.one{
+	width:45%;
+	margin:0% 2%;
+	margin-top:2%;
+	}
+	.two{
+	width:45%;
+	margin:0% 2%;
+	margin-top:2%;
+	}
+	.three{
+	top: 24%;
+	position: absolute;
+	width:100%;
+	margin:0% 2%;
+	}
+}
